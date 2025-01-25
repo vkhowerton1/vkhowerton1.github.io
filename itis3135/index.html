@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Victoria Howerton | ITIS3135 | Home</title>
+        <title>Victoria Howerton's Villainous Hamster | ITIS3135 | Home</title>
         <meta charset="UTF-8">
         <style>
             body {
@@ -14,7 +14,12 @@
     </head>
     <body>
         <header>
-            <h1>Victoria Howerton | ITIS3135 | Home</h1>
+            <h1>Victoria Howerton's Villainous Hamster | ITIS3135 | Home</h1>
+            <nav>
+                <a href="./">Home</a>
+                <a href="introduction.html">Introduction</a>
+                <a href="contract.html">Contract</a>
+            </nav>
         </header>
         <main>
             <h2>Welcome to my ITIS 3135 homepage!</h2>
@@ -30,6 +35,16 @@
                 <a href="https://www.linkedin.com/in/victoria-howerton" target="_blank">LinkedIn</a>
             </nav>
             <p>Page Built By Victoria Howerton &copy; 2025</p>
+            <a id="validation-button-html">
+                <img src="images/htmlValidatorButton.png" alt="html validation button">
+            </a>
+            <a id="validation-button-css">
+                <img src="images/cssValidatorButton.png" alt="css validation button">
+            </a>
         </footer>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href","https://jigsaw.w3.org/css-validator?uri=" + location.href);
+        </script>
     </body>
 </html>

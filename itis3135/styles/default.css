@@ -70,3 +70,7 @@ a {
 a:hover {
     color: #b33b72; /* Change color on hover */
 }
+
+footer {
+    margin-top: 30px; /* Adds space between the last element and the footer */
+}

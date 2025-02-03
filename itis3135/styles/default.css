@@ -70,8 +70,3 @@ a {
 a:hover {
     color: #b33b72; /* Change color on hover */
 }
-
-/* Validation Button Styling */
-#validation-button-html, #validation-button-css {
-    margin-top: 10px;
-}

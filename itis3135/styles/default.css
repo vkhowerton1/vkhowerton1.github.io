@@ -1,52 +1,53 @@
-/* General Body Styles */
 body {
-    background-color: #DDD5F3;
+    background-color: #F5F3EE;
     font-family: Garamond, serif;
     text-align: center;
     margin: 0;
-    color: #572649;
+    color: #2C2C2C;
 }
 
-/* Header Styles */
 header nav a {
     padding: 10px 20px;
     font-weight: bold;
 }
 
 h1 {
-    border-bottom: 3px solid #b33b72;
+    border-bottom: 3px solid #8B3A62;
     padding-bottom: 15px;
 }
 
 header nav {
-    border-bottom: 3px solid #b33b72;
+    border-bottom: 3px solid #8B3A62;
     padding-bottom: 10px;
 }
 
 .secondary-nav {
-    background-color: #DDD5F3;
-    border-bottom: 3px solid #b33b72;
+    background-color: #F5F3EE;
+    border-bottom: 3px solid #8B3A62;
     padding: 10px 0;
     text-align: center;
 }
 
 .secondary-nav a {
     padding: 10px 20px;
-    color: #572649;
+    color: #2C2C2C;
     text-decoration: none;
 }
 
-/* Main Content Styles */
-main ul {
-    text-align: left;
-    margin-left: 20px;
-    padding-left: 20px;
+main {
+    max-width: 1350px;
+    margin: 10px auto;
 }
 
-/* Footer Styles */
+main ul {
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
 footer nav {
-    border-top: 3px solid #b33b72;
-    border-bottom: 3px solid #b33b72;
+    border-top: 3px solid #8B3A62;
+    border-bottom: 3px solid #8B3A62;
     padding: 10px 0;
 }
 
@@ -54,7 +55,6 @@ footer nav a {
     padding: 10px 20px;
 }
 
-/* Specific Styling for Elements */
 .large-text {
     font-size: 1.25em;
     font-weight: bold;
@@ -64,27 +64,25 @@ footer nav a {
     max-width: 600px;
     margin: 3rem auto;
     padding: 1rem;
-    background-color: #fff0f3;
+    background-color: #D1B8A7;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Image Styling */
 img {
-    max-width: 100%; /* Makes images responsive */
+    max-width: 100%;
     height: auto;
 }
 
-/* Link Styling */
 a {
     text-decoration: none;
-    color: #572649; /* Default link color */
+    color: #2C2C2C;
 }
 
 a:hover {
-    color: #b33b72; /* Change color on hover */
+    color: #8B3A62;
 }
 
 footer {
-    margin-top: 30px; /* Adds space between the last element and the footer */
+    margin-top: 30px;
 }

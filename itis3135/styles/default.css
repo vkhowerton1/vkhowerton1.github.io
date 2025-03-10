@@ -86,3 +86,28 @@ a:hover {
 footer {
     margin-top: 30px;
 }
+
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    #colorbox {
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 95%;
+    }
+    #colorbox {
+        background-color: orange;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        padding: 0;
+    }
+    #colorbox {
+        background-color: red;
+    }
+}

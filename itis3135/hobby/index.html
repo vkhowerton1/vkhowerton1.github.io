@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.ico">
+    <style>
+
+        body {
+            font-family: "Courier New", Courier;
+            background-color: #b2beb5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2a5d34;
+            color: white;
+            padding: 15px 0;
+        }
+
+        nav {
+            margin: 10px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            background-color: #3d7a4a;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #4c8b58;
+        }
+
+        main section {
+            display: none;
+            padding: 20px;
+            background-color: #e5edf0;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #2a5d34;
+            color: white;
+        }
+
+        a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        ul {
+            text-align: left;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+
+        figure img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            max-width: 90%;
+            height: auto;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .schedule-container, .how-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            text-align: left;
+        }
+
+        .schedule-container img, .how-container img {
+            border-radius: 10px;
+        }
+
+        .schedule-text, .how-text {
+            max-width: 50%;
+        }
+
+        .locations-container, .why-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .locations-container figure, .why-container figure {
+            flex: 1;
+            max-width: 45%;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('main section').forEach((section) => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>My Hobby</h1>
+        <nav>
+            <a onclick="showSection('home')">Home</a>
+            <a onclick="showSection('about')">About</a>
+            <a onclick="showSection('schedule')">Schedule</a>
+            <a onclick="showSection('locations')">Best Locations</a>
+            <a onclick="showSection('how')">How</a>
+            <a onclick="showSection('why')">Why</a>
+            <a onclick="showSection('ai-prompts')">AI Prompts</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="active">
+            <h2>Welcome to My Hobby</h2>
+            <figure>
+                <img src="images/golf1.jpg" alt="Golfing">
+                <figcaption>Me golfing at Lonnie Poole in Raleigh, NC</figcaption>
+            </figure>
+            <p>A hobby that I have followed throughout my life is golf; I have been playing it since I was 12 years old! Golf is a sport that is focused on precision and coordination; it involves using clubs to hit a ball with the intention of gaining as little strokes to your score as possible. Golf is typically played on an 18-hole course and challenges players with sand bunkers, water, and other hazards (such as trees and rocks).</p>
+            <p>The game of golf can be played individually or in teams. There are numerous formats such as stroke play and regular match play. Golf emphasizes skill, patience, and mental focus; allowing it to be a lifelong sport that can be enjoyed by all ages.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <figure>
+                <img src="images/golf2.jpg" alt="Golfing">
+                <figcaption>Me golfing at The Preserve in Chatham County, NC</figcaption>
+            </figure>
+            <p>I will always vouch for golf being one of the best sports to learn! When I first started in middle school, I was being taught by a PGA Championship Instructor in the golf capital, Pinehurst, NC. I quickly developed and was able to make the Varsity Team in high school. Throughout this time, I began taking private lessons with a local coach, not only did it give me immense experience, but it also landed me my first job, being a Golf Coach! I went from teaching basic group classes to being able to hold private adult lessons.</p>
+            <figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fCkrCpdiN44" style="border: none;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Putting video made by my coach and I</figcaption>
+            </figure>
+            <p>Golf can be a fun sport but it is also one that is challenging and full of mental games. Learning golf can be easy at first, but once you begin to play in competitions, your skills will become more tedious over time. What I enjoy most about the sport is the variety that is within it; there are hundreds of courses scattered around states and plenty of opportunities to play individually or in a group setting. To me, golf is like a vacation; there are plenty of golf courses with beautiful sights and it is a great way to calm the mind.</p>
+        </section>
+
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <div class="schedule-container">
+                <figure>
+                    <img src="images/golf3.jpg" alt="Golfing">
+                    <figcaption>Me golfing at MacGregor Downs Country Club in Cary, NC</figcaption>
+                </figure>
+                <div class="schedule-text">
+                    <p>Luckily, golf is a year-around sport. It can be played during any season and only has a few weather limitations. When I played during high school, I was in tournaments throughout the Summer and Fall; though that is different depending on schools/counties.</p>
+                    <p>Another thing about golf has to do with the availability of the course. Most golf courses can do "walk-ins" but some require a reservation, or in golf terms, a tee time. Tee times ensure minimal wait times while also maintaining the condition of the course.</p>
+                    <p>Check out <a href="https://www.golfnow.com/">Golf Now</a> which showcases discounted course rates for areas across the US.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="locations">
+            <h2>Best Locations</h2>
+            <div class="locations-container">
+                <figure>
+                    <img src="images/sunset_lp.jpg" alt="Sunset at Lonnie Poole Golf Course">
+                    <figcaption>Sunset at NC State golf course</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/sunset_ph.jpg" alt="Sunset at Pinehurst Golf Course">
+                    <figcaption>Sunset in Pinehurst during regional tournament</figcaption>
+                </figure>
+            </div>
+            <p>Golf can be played just about anywhere, whether that is at a golf course or even in your own backyard. When choosing a location to play at, it is important to take into factor the weather. Although coastal views are enjoyable, wind can completely change the direction of a ball. Another factor to take into consideration is the difficulty of the course; most golf courses in scenic areas are challenging due to different terrains. Always research the golf course and conditions it entails before commiting to a reservation.</p>
+            <p>Fun Fact: There are almost 16,000 golf courses in the United States!</p>
+        </section>
+
+        <section id="how">
+            <h2>How to Get Started</h2>
+            <div class="how-container">
+                <figure>
+                    <img src="images/senior_night.jpg" alt="Senior Night">
+                    <figcaption>My team and I on Senior Night</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/driving_range.jpg" alt="Driving Range">
+                    <figcaption>Me practicing on the driving range</figcaption>
+                </figure>
+                <div class="how-text">
+                    <p>There are plenty of ways to dive into the world of golf. Here are a couple of my personal suggestions:</p>
+                    <ul>
+                        <li>If you are a beginner and wanting to become skilled in the sport, I would start out by taking professional lessons where you will increase your club and game knowledge.</li>
+                        <li>If you are looking for a budget-friendly way to practice, try visiting a driving range to work on your swing and build consistency.</li>
+                        <li>Consider playing a few rounds at a par-3 course, as they are shorter and less intimidating than full-length courses.</li>
+                        <li>Watch professional golf tournaments to observe techniques, strategies, and how players approach different situations on the course.</li>
+                        <li>Join a local golf club or league to meet other players, get more course experience, and make the game more enjoyable through friendly competition.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="why">
+            <h2>Why I Love This Hobby</h2>
+            <div class="why-container">
+                <figure>
+                    <img src="images/hole_in_one.jpg" alt="Hole-in-One Picture">
+                    <figcaption>This was the picture taken by my coach directly after I hit my Hole-in-One</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/certification.jpg" alt="Hole-in-One Certification">
+                    <figcaption>The Certification I received from Titleist for my Hole-in-One</figcaption>
+                </figure>
+            </div>
+            <p>Golf is a great way to learn a life-long sport and meet new people! To me, the most valuable skill you will learn is etiquette. Not only do golf courses have a rule book regarding the shots you make, but it also has rules about how to interact with both people and the area you are playing in.</p>
+            <p>I have stuck with golf for almost 8 years now, it has seen the best and worst out of me. My favorite memory from golf was hitting a hole in one during my school practice! This taught me that it is the little things that make the sport enjoyable; whether that is hitting a putt for par, or getting out of a bunker in one stroke. Golf is a sport that I will continue to play throughout my career, I highly recommend picking it up as a hobby!</p>
+        </section>
+
+        <section id="ai-prompts">
+            <h2>AI Prompts</h2>
+            <ul>
+                <li>ChatGPT: How to embed a YouTube video into HTML code</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>Page Designed By <a href="../vhdigitalcreations.com/">VH Digital Creations</a> &copy; 2025, <em>Certified in <a href="https://www.freecodecamp.org/certification/vkhowerton/responsive-web-design">Responsive Web Design</a></em></p>
+    </footer>
+</body>
+</html>

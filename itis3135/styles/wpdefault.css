@@ -21,6 +21,18 @@ header nav {
     padding-bottom: 10px;
 }
 
+main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main ol {
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
 main ul {
     text-align: left;
     margin-left: 20px;
@@ -58,4 +70,71 @@ a:hover {
 
 footer {
     margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid #2E7D5C;
+}
+
+th {
+    background-color: #2E7D5C;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
+tr:nth-child(odd) {
+    background-color: #D4E7D0;
+}
+
+tfoot th {
+    background-color: #2E7D5C;
+    color: white;
+    text-align: right;
+}
+
+tfoot td {
+    background-color: #F1F1F1;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table th, table td {
+    padding: 15px;
+}
+
+table th {
+    background-color: #2E7D5C;
+    color: white;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #F1F1F1;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #D4E7D0;
+}
+
+tfoot td {
+    background-color: #D4E7D0;
 }

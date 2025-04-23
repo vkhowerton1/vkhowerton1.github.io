@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", function () {
       },
       q2: {
         answer: "10/12/1991",
-        explanation: "HTML was first created by Tim Berners-Lee in 1991 as part of the early development of the World Wide Web."
+        explanation: "HTML was first mentioned by Tim Berners-Lee on October 12th, 1991, as part of the early development of the World Wide Web."
       },
       q3: {
         answer: "<ul>",

@@ -113,7 +113,6 @@ footer nav a {
 }
 
 img {
-    max-width: 100%;
     height: auto;
 }
 
@@ -130,6 +129,78 @@ footer {
     margin-top: 30px;
 }
 
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+
+.next {
+    right: 30%;
+}
+
+.prev {
+    left: 30%;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.column {
+    flex: 0 0 auto;
+    width: calc(100% / 13 - 10px);
+    max-width: 100px;
+}
+
+.demo {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+.mySlides img {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Media Queries */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     #colorbox {
         background-color: yellow;

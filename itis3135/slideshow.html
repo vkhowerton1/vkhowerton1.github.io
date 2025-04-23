@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slideshow Gallery</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Victoria Howerton's Villainous Hamster | ITIS3135 | Slideshow</h1>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Image Slideshow - My Name in Pictures</h2>
+
+        <div class="container">
+        <!-- Slides -->
+            <div class="mySlides">
+                <img src="images/violin.jpg" alt="V - Violin">
+            </div>
+            <div class="mySlides">
+                <img src="images/igloo.jpg" alt="I - Igloo">
+            </div>
+            <div class="mySlides">
+                <img src="images/cake.jpg" alt="C - Cake">
+            </div>
+            <div class="mySlides">
+                <img src="images/tooth.jpg" alt="T - Tooth">
+            </div>
+            <div class="mySlides">
+                <img src="images/octopus.jpg" alt="O - Octopus">
+            </div>
+            <div class="mySlides">
+                <img src="images/robot.jpg" alt="R - Robot">
+            </div>
+            <div class="mySlides">
+                <img src="images/icecream.jpg" alt="I - Ice Cream">
+            </div>
+            <div class="mySlides">
+                <img src="images/airplane.jpg" alt="A - Airplane">
+            </div>
+            <div class="mySlides">
+                <img src="images/heel.jpg" alt="H - Heel">
+            </div>
+            <div class="mySlides">
+                <img src="images/orange.jpg" alt="O - Orange">
+            </div>
+            <div class="mySlides">
+                <img src="images/walrus.jpg" alt="W - Walrus">
+            </div>
+            <div class="mySlides">
+                <img src="images/electricity.jpg" alt="E - Electricity">
+            </div>
+            <div class="mySlides">
+                <img src="images/rabbit.jpg" alt="R - Rabbit">
+            </div>
+            <div class="mySlides">
+                <img src="images/tree.jpg" alt="T - Tree">
+            </div>
+            <div class="mySlides">
+                <img src="images/ocean.jpg" alt="O - Ocean">
+            </div>
+            <div class="mySlides">
+                <img src="images/nest.jpg" alt="N - Nest">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column"><img class="demo" src="images/violin.jpg" alt="V - Violin (1st letter)" onclick="currentSlide(1)"></div>
+                <div class="column"><img class="demo" src="images/igloo.jpg" alt="I - Igloo (2nd letter)" onclick="currentSlide(2)"></div>
+                <div class="column"><img class="demo" src="images/cake.jpg" alt="C - Cake (3rd letter)" onclick="currentSlide(3)"></div>
+                <div class="column"><img class="demo" src="images/tooth.jpg" alt="T - Tooth (4th letter)" onclick="currentSlide(4)"></div>
+                <div class="column"><img class="demo" src="images/octopus.jpg" alt="O - Octopus (5th letter)" onclick="currentSlide(5)"></div>
+                <div class="column"><img class="demo" src="images/robot.jpg" alt="R - Robot (6th letter)" onclick="currentSlide(6)"></div>
+                <div class="column"><img class="demo" src="images/icecream.jpg" alt="I - Ice Cream (7th letter)" onclick="currentSlide(7)"></div>
+                <div class="column"><img class="demo" src="images/airplane.jpg" alt="A - Airplane (8th letter)" onclick="currentSlide(8)"></div>
+                <div class="column"><img class="demo" src="images/heel.jpg" alt="H - Heel (9th letter)" onclick="currentSlide(9)"></div>
+                <div class="column"><img class="demo" src="images/orange.jpg" alt="O - Orange (10th letter)" onclick="currentSlide(10)"></div>
+                <div class="column"><img class="demo" src="images/walrus.jpg" alt="W - Walrus (11th letter)" onclick="currentSlide(11)"></div>
+                <div class="column"><img class="demo" src="images/electricity.jpg" alt="E - Electricity (12th letter)" onclick="currentSlide(12)"></div>
+                <div class="column"><img class="demo" src="images/rabbit.jpg" alt="R - Rabbit (13th letter)" onclick="currentSlide(13)"></div>
+                <div class="column"><img class="demo" src="images/tree.jpg" alt="T - Tree (14th letter)" onclick="currentSlide(14)"></div>
+                <div class="column"><img class="demo" src="images/ocean.jpg" alt="O - Ocean (15th letter)" onclick="currentSlide(15)"></div>
+                <div class="column"><img class="demo" src="images/nest.jpg" alt="N - Nest (16th letter)" onclick="currentSlide(16)"></div>
+            </div>
+        </div>
+
+        <section class="prompts">
+            <h2>AI Image Prompts Used</h2>
+            <h3>Tool Used: Google Gemini 2.0 Flash</h3>
+            <ul>
+                <li><strong>V</strong>: Create an image of a violin.</li>
+                <li><strong>I</strong>: Create an image of an igloo.</li>
+                <li><strong>C</strong>: Create an image of a cake.</li>
+                <li><strong>T</strong>: Create an image of a tooth.</li>
+                <li><strong>O</strong>: Create an image of an octopus.</li>
+                <li><strong>R</strong>: Create an image of a robot.</li>
+                <li><strong>I</strong>: Create an image of ice cream.</li>
+                <li><strong>A</strong>: Create an image of an an airplane.</li>
+                <li><strong>H</strong>: Create an image of a high heel.</li>
+                <li><strong>O</strong>: Create an image of an orange.</li>
+                <li><strong>W</strong>: Create an image of a walrus.</li>
+                <li><strong>E</strong>: Create an image of electricity.</li>
+                <li><strong>R</strong>: Create an image of a rabbit.</li>
+                <li><strong>T</strong>: Create an image of a tree.</li>
+                <li><strong>O</strong>: Create an image of the ocean.</li>
+                <li><strong>N</strong>: Create an image of a nest.</li>
+            </ul>
+        </section>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/slideshow.js" defer></script>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

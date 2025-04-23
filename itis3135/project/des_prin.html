@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Design and Principles</title>
-    <!-- Implement Stylesheet Here -->
+    <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 
 </head>
@@ -23,7 +23,29 @@
             <li><strong>P</strong>roximity: Grouping related elements together improves organization and usability.</li>
         </ol>
 
-        <!-- Add Gallery of Images Here -->
+        <h4>Wondering what a CRAPPY Website would look like? Click <a href="../stuff/MoNeY%20tAlK$.htm">here!</a></h4>
+
+        <h3>Image Gallery</h3>
+        <div id="gallery2" class="gallery-container">
+            <img id="gallery-img2" src="images/background_dp.png" alt="CSS Background Change">
+            <div class="caption">CSS is used to change the background color to a light gray</div>
+            <button id="prev2" class="arrow">&#8592;</button>
+            <button id="next2" class="arrow">&#8594;</button>
+        </div>
+
+        <script src="scripts/gallery.js"></script>
+        <script>
+          const images2 = [
+            { src: "images/background_dp.png", caption: "CSS is used to change the background color to a light gray" },
+            { src: "images/font_dp.png", caption: "CSS is used to change the text font used in the file" },
+            { src: "images/pos_dp.png", caption: "CSS can be used to change the position of different components" }
+          ];
+      
+          document.addEventListener('DOMContentLoaded', function() {
+            setupGallery("gallery2", images2);
+          });                   
+        
+          </script>
 
         <h3>Common CSS Properties</h3>
         <ul>
@@ -62,6 +84,10 @@
 
         <h4>Interested in learning more? Check out <a href="https://www.w3schools.com/w3css/default.asp">W3 Schools CSS Tutorial</a></h4>
 
+        <div id="button-container">
+            <a href = "basic_html.html">Back</a>
+            <a href = "build_wp.html">Next</a>
+        </div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>

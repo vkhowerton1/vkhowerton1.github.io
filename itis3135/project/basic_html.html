@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Basic HTML</title>
-    <!-- Implement Stylesheet Here -->
+    <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -28,7 +28,7 @@
         <h3>Common HTML Attributes</h3>
         <p>Attributes provide additional information about elements and modify their behavior.</p>
         <ul>
-            <li><strong>Headings:</strong> Use &lt;h1&gt; to &lt;h6&gt; to define different heading levels.</li>
+            <li><strong>Headings:</strong> Use &lt;h1&gt; to &lt;h6&gt; to define different heading levels. As the number grows, the importance becomes less prominence.</li>
             <li><strong>Paragraphs:</strong> Use &lt;p&gt; to define a block of text.</li>
             <li><strong>Links:</strong> Use &lt;a href="URL"&gt; to create hyperlinks.</li>
             <li><strong>Images:</strong> Use &lt;img src="image.jpg" alt="Description"&gt; to display images.</li>
@@ -66,7 +66,28 @@
             <li><strong>Submit & Reset Buttons:</strong> Use &lt;button type="submit"&gt; to submit a form and &lt;button type="reset"&gt; to clear fields.</li>
         </ul>
 
-        <!-- Add Gallery of Images Here -->
+        <h3>Image Gallery</h3>
+        <div id="gallery1" class="gallery-container">
+            <img id="gallery-img1" src="images/setup_html.png" alt="HTML File Setup">
+            <div class="caption">Basic HTML File Setup</div>
+            <button id="prev1" class="arrow">&#8592;</button>
+            <button id="next1" class="arrow">&#8594;</button>
+        </div>
+
+        <script src="scripts/gallery.js"></script>
+        <script>
+          const images1 = [
+            { src: "images/setup_html.png", caption: "Basic HTML File Setup" },
+            {src: "images/html_img.png", caption:"Including an image in HTML code"},
+            { src: "images/html_bold.png", caption: "Using strong tags to make text bold" },
+            { src: "images/form_html.png", caption: "Form created in HTML with radio buttons that allow users to select one choice" }
+          ];
+      
+          document.addEventListener('DOMContentLoaded', function() {
+            setupGallery("gallery1", images1);
+          });
+
+        </script>
         
         <h3>HTML Practices</h3>
         <p>Following best practices improves code readability and maintainability.</p>
@@ -86,6 +107,10 @@
 
         <h4>Interested in learning more? Check out <a href="https://www.w3schools.com/html/">W3 Schools HTML Tutorial</a></h4>
 
+        <div id="button-container">
+            <a href = "index.html">Back</a>
+            <a href = "des_prin.html">Next</a>
+        </div>
     </main>
     
     <footer>

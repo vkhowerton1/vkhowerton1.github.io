@@ -23,72 +23,87 @@
     <form id="quizForm">
       <!-- Q1 -->
       <div class="question">
-        <p><strong>1. What type of language does HTML qualify under?</strong></p>
-        <label><input type="radio" name="q1" value="Programming"> Programming</label>
-        <label><input type="radio" name="q1" value="Markup"> Markup</label>
-        <label><input type="radio" name="q1" value="Styling"> Styling</label>
-        <label><input type="radio" name="q1" value="Scripting"> Scripting</label>
+        <fieldset>
+          <legend><strong>1. What type of language does HTML qualify under?</strong></legend>
+          <label><input type="radio" name="q1" value="Programming"> Programming</label><br>
+          <label><input type="radio" name="q1" value="Markup"> Markup</label><br>
+          <label><input type="radio" name="q1" value="Styling"> Styling</label><br>
+          <label><input type="radio" name="q1" value="Scripting"> Scripting</label>
+        </fieldset>
       </div>
 
       <!-- Q2 -->
       <div class="question">
-        <p><strong>2. What year was HTML created?</strong></p>
-        <input type="text" name="q2" id="datePicker" placeholder="Select a date">
+        <fieldset>
+          <label for="datePicker">When did Tim Berners-Lee make the first public mention of HTML?</label>
+          <input type="text" name="q2" id="datePicker" placeholder="Select a date">
+        </fieldset>
       </div>
-
 
       <!-- Q3 -->
       <div class="question">
-        <p><strong>3. What tag is used when creating an unordered list?</strong></p>
-        <label><input type="radio" name="q3" value="<ol>">&lt;ol&gt;</label>
-        <label><input type="radio" name="q3" value="<ul>">&lt;ul&gt;</label>
-        <label><input type="radio" name="q3" value="<li>">&lt;li&gt;</label>
-        <label><input type="radio" name="q3" value="<list>">&lt;list&gt;</label>
+        <fieldset>
+          <legend><strong>3. What tag is used when creating an unordered list?</strong></legend>
+          <label><input type="radio" name="q3" value="<ol>">&lt;ol&gt;</label><br>
+          <label><input type="radio" name="q3" value="<ul>">&lt;ul&gt;</label><br>
+          <label><input type="radio" name="q3" value="<li>">&lt;li&gt;</label><br>
+          <label><input type="radio" name="q3" value="<list>">&lt;list&gt;</label>
+        </fieldset>
       </div>
 
       <!-- Q4 -->
       <div class="question">
-        <p><strong>4. What is the difference between an internal link and an external link?</strong></p>
-        <label><input type="radio" name="q4" value="Internal links are bold; external links are underlined."> Internal links are bold; external links are underlined.</label>
-        <label><input type="radio" name="q4" value="Internal links point to pages on the same website; external links go to other websites."> Internal links point to pages on the same website; external links go to other websites.</label>
-        <label><input type="radio" name="q4" value="Internal links are written in JavaScript; external links are in HTML."> Internal links are written in JavaScript; external links are in HTML.</label>
-        <label><input type="radio" name="q4" value="There is no difference."> There is no difference.</label>
+        <fieldset>
+          <legend><strong>4. What is the difference between an internal link and an external link?</strong></legend>
+          <label><input type="radio" name="q4" value="Internal links are bold; external links are underlined."> Internal links are bold; external links are underlined.</label><br>
+          <label><input type="radio" name="q4" value="Internal links point to pages on the same website; external links go to other websites."> Internal links point to pages on the same website; external links go to other websites.</label><br>
+          <label><input type="radio" name="q4" value="Internal links are written in JavaScript; external links are in HTML."> Internal links are written in JavaScript; external links are in HTML.</label><br>
+          <label><input type="radio" name="q4" value="There is no difference."> There is no difference.</label>
+        </fieldset>
       </div>
 
       <!-- Q5 -->
       <div class="question">
-        <p><strong>5. What does the "R" stand for in CRAP design principles?</strong></p>
-        <label><input type="radio" name="q5" value="Responsiveness"> Responsiveness</label>
-        <label><input type="radio" name="q5" value="Raster"> Raster</label>
-        <label><input type="radio" name="q5" value="Resolution"> Resolution</label>
-        <label><input type="radio" name="q5" value="Repetition"> Repetition</label>
+        <fieldset>
+          <legend><strong>5. What does the "R" stand for in CRAP design principles?</strong></legend>
+          <label><input type="radio" name="q5" value="Responsiveness"> Responsiveness</label><br>
+          <label><input type="radio" name="q5" value="Raster"> Raster</label><br>
+          <label><input type="radio" name="q5" value="Resolution"> Resolution</label><br>
+          <label><input type="radio" name="q5" value="Repetition"> Repetition</label>
+        </fieldset>
       </div>
 
       <!-- Q6 -->
       <div class="question">
-        <p><strong>6. When selecting a font in CSS, what is the second font listed used for?</strong></p>
-        <label><input type="radio" name="q6" value="It adds bold style to the first font."> It adds bold style to the first font.</label>
-        <label><input type="radio" name="q6" value="It's a fallback if the first font isn't available."> It's a fallback if the first font isn't available.</label>
-        <label><input type="radio" name="q6" value="It is used for mobile devices."> It is used for mobile devices.</label>
-        <label><input type="radio" name="q6" value="It is only decorative."> It is only decorative.</label>
+        <fieldset>
+          <legend><strong>6. When selecting a font in CSS, what is the second font listed used for?</strong></legend>
+          <label><input type="radio" name="q6" value="It adds bold style to the first font."> It adds bold style to the first font.</label><br>
+          <label><input type="radio" name="q6" value="It's a fallback if the first font isn't available."> It's a fallback if the first font isn't available.</label><br>
+          <label><input type="radio" name="q6" value="It is used for mobile devices."> It is used for mobile devices.</label><br>
+          <label><input type="radio" name="q6" value="It is only decorative."> It is only decorative.</label>
+        </fieldset>
       </div>
 
       <!-- Q7 -->
       <div class="question">
-        <p><strong>7. What does adding JavaScript to a website do?</strong></p>
-        <label><input type="radio" name="q7" value="Improves search engine optimization."> Improves search engine optimization.</label>
-        <label><input type="radio" name="q7" value="Compresses the images."> Compresses the images.</label>
-        <label><input type="radio" name="q7" value="Makes it interactive and dynamic."> Makes it interactive and dynamic.</label>
-        <label><input type="radio" name="q7" value="Changes the domain name."> Changes the domain name.</label>
+        <fieldset>
+          <legend><strong>7. What does adding JavaScript to a website do?</strong></legend>
+          <label><input type="radio" name="q7" value="Improves search engine optimization."> Improves search engine optimization.</label><br>
+          <label><input type="radio" name="q7" value="Compresses the images."> Compresses the images.</label><br>
+          <label><input type="radio" name="q7" value="Makes it interactive and dynamic."> Makes it interactive and dynamic.</label><br>
+          <label><input type="radio" name="q7" value="Changes the domain name."> Changes the domain name.</label>
+        </fieldset>
       </div>
 
       <!-- Q8 -->
       <div class="question">
-        <p><strong>8. What is a variable in JavaScript used for?</strong></p>
-        <label><input type="radio" name="q8" value="To store and reuse data."> To store and reuse data.</label>
-        <label><input type="radio" name="q8" value="To style the page."> To style the page.</label>
-        <label><input type="radio" name="q8" value="To define web links."> To define web links.</label>
-        <label><input type="radio" name="q8" value="To encrypt data."> To encrypt data.</label>
+        <fieldset>
+          <legend><strong>8. What is a variable in JavaScript used for?</strong></legend>
+          <label><input type="radio" name="q8" value="To store and reuse data."> To store and reuse data.</label><br>
+          <label><input type="radio" name="q8" value="To style the page."> To style the page.</label><br>
+          <label><input type="radio" name="q8" value="To define web links."> To define web links.</label><br>
+          <label><input type="radio" name="q8" value="To encrypt data."> To encrypt data.</label>
+        </fieldset>
       </div>
 
       <input type="submit" value="Submit Quiz">

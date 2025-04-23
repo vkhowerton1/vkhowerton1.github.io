@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Building a Webpage</title>
-    <!-- Implement Stylesheet Here -->
+    <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 
 </head>
@@ -33,6 +33,27 @@
             <li><strong>Conditions:</strong> Execute code based on conditions using <code>if</code> statements.</li>
         </ul>
 
+        <h3>Image Gallery</h3>
+        <div id="gallery3" class="gallery-container">
+            <img id="gallery-img3" src="images/variable_js.png" alt="Variable created in CSS">
+            <div class="caption">Let is used to create a variable named message which holds the text Hello World!</div>
+            <button id="prev3" class="arrow">&#8592;</button>
+            <button id="next3" class="arrow">&#8594;</button>
+        </div>
+
+        <script src="scripts/gallery.js"></script>
+        <script>
+          const images3 = [
+            { src: "images/variable_js.png", caption: "Let is used to create a variable named message which holds the text Hello World!" },
+            { src: "images/event_js.png", caption: "Click event is created which allows a function to calculate the amount of clicks done" },
+            { src: "images/comment_js.png", caption: "A function is created, single-line and multi-line comments are also used" }
+          ];
+      
+          document.addEventListener('DOMContentLoaded', function() {
+            setupGallery("gallery3", images3);
+          });
+        </script>
+
         <h3>JavaScript Practices</h3>
         <ul>
             <li>Use meaningful variable names.</li>
@@ -47,6 +68,10 @@
 
         <h4>Interested in learning more? Check out <a href="https://www.w3schools.com/js/">W3 Schools JavaScript Tutorial</a></h4>
 
+        <div id="button-container">
+            <a href = "des_prin.html">Back</a>
+            <a href = "quiz.html">Next</a>
+        </div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>

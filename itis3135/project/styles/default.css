@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: black;
 }
 
 header {
@@ -84,18 +84,18 @@ h3 {
 p {
     line-height: 1.8;
     font-size: 1rem;
-    color: #666;
+    color: black;
 }
 
 ul, ol {
     margin-left: 20px;
     font-size: 1rem;
-    color: #444;
+    color: black;
 }
 
 footer {
     background: #1e3d58;
-    color: white;
+    color: black;
     text-align: center;
     padding: 15px 0;
     position: relative;
@@ -326,4 +326,40 @@ figcaption {
 
 .ui-datepicker .ui-datepicker-days-cell-over {
     background-color: #f1f1f1;
+}
+
+.zoom-widget {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+.zoom-widget:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    #colorbox {
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 95%;
+    }
+    #colorbox {
+        background-color: orange;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        padding: 0;
+    }
+    #colorbox {
+        background-color: red;
+    }
 }

@@ -1,22 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Quiz Page</title>
-    <!-- Implement Stylesheet Here -->
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8">
+  <title>Quiz Page</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>   
 </head>
+
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
-    </header>
-    <main>
-        <p>This is a basic HTML page.</p>
-    </main>
-    <footer>
-        <div data-include="components/footer.html"></div>
-    </footer>
-    <script src="scripts/HTMLInclude.min.js"></script>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h3>Concept Quiz</h3>
+    <p>Woohoo! You made it through the HTML Hero curriculum, what an accomplishment!</p>
+    <p>Take the quiz below to test your skills, feedback if needed is provided at the end. Good luck!</p>
+
+    <form id="quizForm">
+      <!-- Q1 -->
+      <div class="question">
+        <p><strong>1. What type of language does HTML qualify under?</strong></p>
+        <label><input type="radio" name="q1" value="Programming"> Programming</label>
+        <label><input type="radio" name="q1" value="Markup"> Markup</label>
+        <label><input type="radio" name="q1" value="Styling"> Styling</label>
+        <label><input type="radio" name="q1" value="Scripting"> Scripting</label>
+      </div>
+
+      <!-- Q2 -->
+      <div class="question">
+        <p><strong>2. What year was HTML created?</strong></p>
+        <input type="text" name="q2" id="datePicker" placeholder="Select a date">
+      </div>
+
+
+      <!-- Q3 -->
+      <div class="question">
+        <p><strong>3. What tag is used when creating an unordered list?</strong></p>
+        <label><input type="radio" name="q3" value="<ol>">&lt;ol&gt;</label>
+        <label><input type="radio" name="q3" value="<ul>">&lt;ul&gt;</label>
+        <label><input type="radio" name="q3" value="<li>">&lt;li&gt;</label>
+        <label><input type="radio" name="q3" value="<list>">&lt;list&gt;</label>
+      </div>
+
+      <!-- Q4 -->
+      <div class="question">
+        <p><strong>4. What is the difference between an internal link and an external link?</strong></p>
+        <label><input type="radio" name="q4" value="Internal links are bold; external links are underlined."> Internal links are bold; external links are underlined.</label>
+        <label><input type="radio" name="q4" value="Internal links point to pages on the same website; external links go to other websites."> Internal links point to pages on the same website; external links go to other websites.</label>
+        <label><input type="radio" name="q4" value="Internal links are written in JavaScript; external links are in HTML."> Internal links are written in JavaScript; external links are in HTML.</label>
+        <label><input type="radio" name="q4" value="There is no difference."> There is no difference.</label>
+      </div>
+
+      <!-- Q5 -->
+      <div class="question">
+        <p><strong>5. What does the "R" stand for in CRAP design principles?</strong></p>
+        <label><input type="radio" name="q5" value="Responsiveness"> Responsiveness</label>
+        <label><input type="radio" name="q5" value="Raster"> Raster</label>
+        <label><input type="radio" name="q5" value="Resolution"> Resolution</label>
+        <label><input type="radio" name="q5" value="Repetition"> Repetition</label>
+      </div>
+
+      <!-- Q6 -->
+      <div class="question">
+        <p><strong>6. When selecting a font in CSS, what is the second font listed used for?</strong></p>
+        <label><input type="radio" name="q6" value="It adds bold style to the first font."> It adds bold style to the first font.</label>
+        <label><input type="radio" name="q6" value="It's a fallback if the first font isn't available."> It's a fallback if the first font isn't available.</label>
+        <label><input type="radio" name="q6" value="It is used for mobile devices."> It is used for mobile devices.</label>
+        <label><input type="radio" name="q6" value="It is only decorative."> It is only decorative.</label>
+      </div>
+
+      <!-- Q7 -->
+      <div class="question">
+        <p><strong>7. What does adding JavaScript to a website do?</strong></p>
+        <label><input type="radio" name="q7" value="Improves search engine optimization."> Improves search engine optimization.</label>
+        <label><input type="radio" name="q7" value="Compresses the images."> Compresses the images.</label>
+        <label><input type="radio" name="q7" value="Makes it interactive and dynamic."> Makes it interactive and dynamic.</label>
+        <label><input type="radio" name="q7" value="Changes the domain name."> Changes the domain name.</label>
+      </div>
+
+      <!-- Q8 -->
+      <div class="question">
+        <p><strong>8. What is a variable in JavaScript used for?</strong></p>
+        <label><input type="radio" name="q8" value="To store and reuse data."> To store and reuse data.</label>
+        <label><input type="radio" name="q8" value="To style the page."> To style the page.</label>
+        <label><input type="radio" name="q8" value="To define web links."> To define web links.</label>
+        <label><input type="radio" name="q8" value="To encrypt data."> To encrypt data.</label>
+      </div>
+
+      <input type="submit" value="Submit Quiz">
+      <input type="reset" value="Reset Quiz">
+    </form>
+
+    <div id="result"></div>
+
+    <div id="button-container">
+      <a href="build_wp.html">Back</a>
+    </div>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script src="scripts/quiz.js"></script>
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="scripts/yearPicker.js"></script>
 </body>
 </html>

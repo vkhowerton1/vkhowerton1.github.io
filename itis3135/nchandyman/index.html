@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NC Handyman Services</title>
+  <link rel="stylesheet" href="styles/default.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>NC Handyman Services</h1>
+    <div class="header-subtext">
+      <p><i class="fas fa-map-marker-alt"></i> Location</p>
+      <p><i class="fas fa-phone-alt"></i> Cell | <i class="fas fa-envelope"></i> Email</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <p>About Statement</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Service #1</li>
+      <li>Service #2</li>
+      <li>Service #3</li>
+      <li>Service #4</li>
+      <li>Service #5</li>
+      <li>etc...</li>
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Project Gallery</h2>
+    <div class="gallery-container" id="gallery">
+      <img id="gallery-img" src="images/nchandyman.jpg" alt="NC Handyman Photo">
+      <div class="caption" id="gallery-caption">Caption</div>
+      <button id="prev" class="arrow">&#8592;</button>
+      <button id="next" class="arrow">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p> NC Handyman Services | Location | Cell | Email </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/gallery.js"></script>
+  <script>
+    const images = [
+      { src: "images/nchandyman.jpg", caption: "Caption" },
+      { src: "images/handyman.jpg", caption: "Caption" },
+      { src: "images/nchandyman.jpg", caption: "Caption" },
+      { src: "images/handyman.jpg", caption: "Caption" },
+      { src: "images/nchandyman.jpg", caption: "Caption" }
+    ];
+
+    document.addEventListener('DOMContentLoaded', function () {
+      setupGallery("gallery", images);
+    });
+  </script>
+
+</body>
+</html>
